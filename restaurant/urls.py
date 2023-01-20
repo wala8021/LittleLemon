@@ -9,4 +9,8 @@ urlpatterns = [
     path('menu/<int:pk>', views.SingleMenuItemView.as_view(), name='single_menu'),
     path('api-token-auth/', obtain_auth_token),
     
+    #all the djoser endpoints work automatically without explicitly defining them here.. examples below... find more on https://djoser.readthedocs.io/en/latest/getting_started.html
+    # /auth/users/ POST new user registration
+    # /auth/users/ GET request to list all users
+    # /auth/token/login/ POST to get token
 ]

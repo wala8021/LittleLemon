@@ -28,6 +28,6 @@ urlpatterns = [
     path('restaurant/booking/', include(router.urls)),
     
     #djoser endpoints enabled
-    # path('auth/', include('djoser.urls')),
-    # path('auth/', include('djoser.urls.authtoken')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
 ]
