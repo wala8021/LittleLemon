@@ -1,8 +1,8 @@
 from django.test import TestCase
-from restaurant.models import Menu
 
-# class MenuItemView(TestCase):
-#     def test_get_items(self):
-#         item = Menu.objects.create(Title="IceCream", Price=80, Inventory=100)
-#         self.assertEqual(str(item), 'IceCream : 80')
+
+class TestCall(TestCase):
+    def test_register_new_user(self): #tests new user registration
+        response = self.client.post("/auth/users/", data={"username":'user', "password":'test@2023'})
+        self.assertEqual(response.status_code, 201)
         
