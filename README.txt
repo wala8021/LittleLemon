@@ -3,7 +3,6 @@ For some reason it couldn't recognize the djoser and mysqlclient I installed in 
 Please install djoser and mysqlclient in your global environment before you proceed!
 
 Superuser:
-
 username: adminlittlelemon 
 password: admin@littlelemon
 
